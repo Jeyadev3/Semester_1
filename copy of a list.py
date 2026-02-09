@@ -1,0 +1,6 @@
+n = int(input("Enter n :"))
+elements = input("Enter elements :")
+s = elements.split()
+copy_list = s.copy()
+print("Original list :", s)
+print("Copied list   :", copy_list)
