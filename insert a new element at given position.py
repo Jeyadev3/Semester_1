@@ -1,0 +1,6 @@
+n = int(input("Enter n: "))
+s = input("Enter elements: ").split()
+new = input("Enter new element: ")
+pos = int(input("Enter position to insert: "))
+s.insert(pos - 1, new)
+print("Updated list:", s)
