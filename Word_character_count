@@ -1,0 +1,12 @@
+def analyze_text(text):
+    words = text.split()
+    characters = len(text.replace(" ", ""))
+    vowels = sum(1 for char in text.lower() if char in "aeiou")
+
+    print("Total Words:", len(words))
+    print("Total Characters (no spaces):", characters)
+    print("Total Vowels:", vowels)
+
+
+sentence = input("Enter a sentence: ")
+analyze_text(sentence)
