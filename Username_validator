@@ -1,0 +1,11 @@
+def validate_username(username):
+    if len(username) < 5:
+        return "Username too short"
+    elif " " in username:
+        return "Username must not contain spaces"
+    elif not username[0].isalpha():
+        return "Username must start with a letter"
+    else:
+        return "Username is valid"
+user = input("Enter username: ")
+print(validate_username(user))
