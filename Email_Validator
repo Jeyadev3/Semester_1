@@ -1,0 +1,11 @@
+def validate_email(email):
+    if "@" in email and "." in email:
+        at_index = email.index("@")
+        dot_index = email.rindex(".")
+        
+        if at_index < dot_index and at_index > 0 and dot_index < len(email) - 1:
+            return "Valid Email"
+    return "Invalid Email"
+
+email = input("Enter your email: ")
+print(validate_email(email))
